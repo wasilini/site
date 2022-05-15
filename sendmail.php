@@ -24,7 +24,7 @@ if($_POST['hand'] == "left"){
 }
 
 //Тело письма
-$body = '<h1>Встречай супер письмо</h1>'
+$body = '<h1>Встречай супер письмо</h1>';
 
 if(trim(!empty($_POST['name']))){
 	$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
@@ -33,7 +33,7 @@ if(trim(!empty($_POST['email']))){
 	$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 }
 if(trim(!empty($_POST['hand']))){
-	$body.='<p><strong>Рука:</strong> '.$_hand.'</p>';
+	$body.='<p><strong>Рука:</strong> '.$hand.'</p>';
 }
 if(trim(!empty($_POST['age']))){
 	$body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
